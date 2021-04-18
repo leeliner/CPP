@@ -8,7 +8,7 @@ int main()
     while(a1>0)
     {cout<<"   ";
     a1--;}
-    for (;a<8;a++)
+    for (;a<7;a++)
     {
         cout <<setw(2)<<day++ <<" ";
 
