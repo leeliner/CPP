@@ -22,6 +22,10 @@ public class book
     {
         author = a;
     }
+    public string getbookname() { return bookname; }
+    public string getauthor() { return author; }
+    public int getprice() { return price; }
+
 
     public book(string bookname, int price, string author)
     {
@@ -37,9 +41,11 @@ public class book
         a.setauthor("YJ-L");
         a.setprice(99);
         a.setbookname("D#");
-        book b = new book("C#", 999,"JY-L");
+        book b = new book("C#", 999, "JY-L");
         Console.WriteLine(a.author);
         Console.WriteLine(b.author);
+        string c = a.author;
+        Console.WriteLine(c);
 
 
     }
