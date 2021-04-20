@@ -8,7 +8,7 @@
     <script type ="text/javascript" language="javascript">
     function loadForm(){alert("this is loading ");} 
     function unloadForm(){alert("now is unloading");}
-    function validate(){if(document.aa.userr.value=="1"){alert("nothing input!");}}
+    function validate(){if(document.aa.userr.value=="1"){alert("nothing input!");}}//需要用form 设置NAME 来让它来确定userr的位置
     function vdate(){if(document.date.user.value==""){alert("wrong!");return false;}}
     
     </script>
@@ -16,8 +16,8 @@
 <body  onload="loadForm()" onunload="unloadForm()">
     <a href="表单.html">jumps to anthor html</a>
  <form name="aa"   ><input type="text " name ="userr"/>
-    <input type="button" value ="submit" onclick="validate()"/></form>
-    <form name="date" action="#" method="get" onsubmit="return vdate()">
+    <input type="button" value ="submit" onclick="validate()"/></form>//加；不起作用
+    <form name="date" action="#" method="get" onsubmit="return vdate()">//加；不起作用
     <input type="text" name="user"/>
     <input type ="submit" value="submit"/>
     </form>
